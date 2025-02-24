@@ -2,11 +2,11 @@ services:
   postgresql:
     image: bitnami/postgresql:latest
     environment:
-      - POSTGRESQL_USERNAME=natherzito
-      - POSTGRESQL_PASSWORD=minhasenhasupertop
-      - POSTGRESQL_DATABASE=gerenciador_partidas
+      - POSTGRESQL_USERNAME=${POSTGRES_USERNAME}
+      - POSTGRESQL_PASSWORD=${POSTGRES_PASSWORD}
+      - POSTGRESQL_DATABASE=${POSTGRES_DATABASE}
     ports:
-        - "5432:5432"
+        - "${POSTGRES_PORT}:${POSTGRES_PORT}"
     volumes:
         - db:/bitnami/postgresql
     networks:
