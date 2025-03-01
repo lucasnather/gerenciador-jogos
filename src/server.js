@@ -1,9 +1,13 @@
 import 'dotenv/config'
 import express from 'express'
 import { sequelize } from './model/connection.js'
+import { Matches } from './model/entities/matches.js'
 import { Player } from './model/entities/player.js'
+import { TeamPlayers } from './model/entities/team-players.js'
+import { Teams } from './model/entities/teams.js'
+import { Scores } from './model/entities/score.js'
 const app = express()
-const port = process.env.PORT || 8080
+const port = process.env.PORT || 3000
 
 app.get('/', (req, res) => {
   res.json({
