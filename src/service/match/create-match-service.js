@@ -1,4 +1,4 @@
-import { MatchRepository } from "../repository/match/match-repository.js"
+import { MatchRepository } from "../../repository/match/repository.js"
 
 export class CreateMatchService {
 

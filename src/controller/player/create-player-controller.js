@@ -1,4 +1,4 @@
-import { CreatePlayerService } from "../service/create-player-service.js"
+import { CreatePlayerService } from "../../service/player/create-player-service.js"
 
 export class CreatePlayerController {
 

@@ -1,4 +1,4 @@
-import { CreateTeamPlayerService } from "../service/create-team-player-service.js"
+import { CreateTeamPlayerService } from "../../service/team/create-team-player-service.js"
 
 export class CreateTeamPlayerController {
 

@@ -1,4 +1,4 @@
-import { CreateMatchService } from "../service/create-match-service.js"
+import { CreateMatchService } from "../../service/match/create-match-service.js"
 
 export class CreateMatchController {
 

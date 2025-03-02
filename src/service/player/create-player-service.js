@@ -1,4 +1,4 @@
-import { PlayerRepository } from "../repository/player/player-repository.js";
+import { PlayerRepository } from "../../repository/player/repository.js";
 
 export class CreatePlayerService {
 

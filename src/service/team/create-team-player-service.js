@@ -1,4 +1,4 @@
-import { TeamPlayerRepository } from "../repository/team-players/team-players.repository.js";
+import { TeamPlayerRepository } from "../../repository/team-players/repository.js";
 
 export class CreateTeamPlayerService {
 

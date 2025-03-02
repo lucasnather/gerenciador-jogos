@@ -1,5 +1,5 @@
 import { and } from "sequelize";
-import { TeamRepository } from "../repository/team/team-repository.js";
+import { TeamRepository } from "../../repository/team/repository.js";
 
 export class CreateTeamService {
 

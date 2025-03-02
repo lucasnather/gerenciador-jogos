@@ -1,5 +1,5 @@
 import { Router } from "express"
-import { CreatePlayerController } from "../../controller/create-player-controller.js"
+import { CreatePlayerController } from "../../controller/player/create-player-controller.js"
 
 const router = Router()
 
