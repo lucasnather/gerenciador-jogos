@@ -7,12 +7,15 @@ import { router as teamPlayerRouter } from './routes/team-player/route.js'
 import { router as matchRouter } from './routes/match/route.js'
 import { router as scoreRouter } from './routes/score/route.js'
 import morgan from 'morgan'
+import { morganStream } from './libs/morgan.js'
 
 const app = express()
 const port = process.env.PORT || 3000
 
 app.use(express.json())
-app.use(morgan('Método - :method Url - :url Status - :status Tempo - :response-time ms'))
+app.use(morgan('Método - :method Url - :url Status - :status Tempo - :response-time ms', {
+  stream: morganStream
+}))
 
 app.use(playerRouter)
 app.use(teamRouter)
