@@ -1,1 +1,109 @@
 {"level":"info","message":"Método - GET Url - /api/players/637e1d92-5c34-476f-a524-383c46fe1b5b Status - 200 Tempo - 11.897 ms\n","timestamp":"2025-03-02T21:53:19.411Z"}
+{"level":"info","message":"Não foi enviado os campos necessários","timestamp":"2025-03-02T22:01:33.907Z"}
+{"level":"info","message":"Não foi enviado os campos necessários","timestamp":"2025-03-02T22:02:08.393Z"}
+{"level":"info","message":"Não foi enviado os campos necessários","timestamp":"2025-03-02T22:02:22.014Z"}
+{"level":"info","message":"Não foi enviado os campos necessários","timestamp":"2025-03-02T22:03:00.096Z"}
+{"level":"info","message":"Não foi enviado os campos necessários","timestamp":"2025-03-02T22:03:13.989Z"}
+{"level":"info","message":"Não foi enviado os campos necessários","timestamp":"2025-03-02T22:03:36.745Z"}
+{"level":"info","message":"Não foi enviado os campos necessários","timestamp":"2025-03-02T22:04:52.896Z"}
+{"level":"info","message":"Não foi enviado os campos necessários","timestamp":"2025-03-02T22:05:30.912Z"}
+{"level":"info","message":"Não foi enviado os campos necessários","timestamp":"2025-03-02T22:05:51.898Z"}
+{"level":"info","message":"Não foi enviado os campos necessários","timestamp":"2025-03-02T22:06:58.377Z"}
+{"level":"info","message":"Não foi enviado os campos necessários","timestamp":"2025-03-02T22:07:06.687Z"}
+{"level":"info","message":"Não foi enviado os campos necessários","timestamp":"2025-03-02T22:08:45.074Z"}
+{"level":"info","message":"Não foi enviado os campos necessários","timestamp":"2025-03-02T22:08:57.479Z"}
+{"level":"info","message":"Não foi enviado os campos necessários","timestamp":"2025-03-02T22:09:25.144Z"}
+{"level":"info","message":"Não foi enviado os campos necessários","timestamp":"2025-03-02T22:09:38.237Z"}
+{"level":"info","message":"Não foi enviado os campos necessários","timestamp":"2025-03-02T22:09:47.480Z"}
+{"level":"info","message":"Método - POST Url - /api/matches Status - 200 Tempo - 5.870 ms\n","timestamp":"2025-03-02T22:09:47.487Z"}
+{"level":"info","message":"Não foi enviado os campos necessários","timestamp":"2025-03-02T22:10:58.581Z"}
+{"level":"info","message":"Método - POST Url - /api/matches Status - 200 Tempo - 5.709 ms\n","timestamp":"2025-03-02T22:10:58.587Z"}
+{"level":"info","message":"Não foi enviado os campos necessários","timestamp":"2025-03-02T22:13:28.738Z"}
+{"level":"info","message":"Método - POST Url - /api/matches Status - 500 Tempo - 5.966 ms\n","timestamp":"2025-03-02T22:13:28.744Z"}
+{"level":"info","message":"Não foi enviado os campos necessários","timestamp":"2025-03-02T22:15:15.754Z"}
+{"level":"info","message":"Método - POST Url - /api/matches Status - 500 Tempo - 3.338 ms\n","timestamp":"2025-03-02T22:15:15.758Z"}
+{"level":"info","message":"Método - GET Url - /api/players/637e1d92-5c34-476f-a524-383c46fe1b5b Status - 200 Tempo - 13.971 ms\n","timestamp":"2025-03-02T22:15:22.349Z"}
+{"level":"info","message":"Método - POST Url - /api/players Status - 200 Tempo - 54.826 ms\n","timestamp":"2025-03-02T22:15:34.705Z"}
+{"level":"info","message":"Método - GET Url - /api/players/4c941ac5-0435-4702-91f5-b8afc0baf4ec Status - 200 Tempo - 5.597 ms\n","timestamp":"2025-03-02T22:15:41.351Z"}
+{"level":"info","message":"Método - GET Url - /api/players/4c941ac5-0435-4702-91f5-b8afc0baf4ec Status - 200 Tempo - 15.665 ms\n","timestamp":"2025-03-02T22:16:25.975Z"}
+{"level":"info","message":"Método - GET Url - /api/players/4c941ac5-0435-4702-91f5-b8afc0baf4ec Status - 200 Tempo - 11.090 ms\n","timestamp":"2025-03-02T22:17:04.546Z"}
+{"level":"info","message":"Método - GET Url - /api/players/4c941ac5-0435-4702-91f5-b8afc0baf4ec Status - 200 Tempo - 11.611 ms\n","timestamp":"2025-03-02T22:17:14.265Z"}
+{"level":"info","message":"Método - GET Url - /api/players/4c941ac5-0435-4702-91f5-b8afc0baf4ec Status - 200 Tempo - 14.400 ms\n","timestamp":"2025-03-02T22:17:27.510Z"}
+{"level":"info","message":"Método - GET Url - /api/players/4c941ac5-0435-4702-91f5-b8afc0baf4ec Status - 200 Tempo - 7.568 ms\n","timestamp":"2025-03-02T22:17:35.692Z"}
+{"level":"info","message":"Método - GET Url - /api/players/4c941ac5-0435-4702-91f5-b8afc0baf4ec Status - 200 Tempo - 13.308 ms\n","timestamp":"2025-03-02T22:18:09.899Z"}
+{"level":"info","message":"Método - GET Url - /api/players/4c941ac5-0435-4702-91f5-b8afc0baf4ec Status - 200 Tempo - 16.253 ms\n","timestamp":"2025-03-02T22:19:03.095Z"}
+{"level":"info","message":"Método - GET Url - /api/players/4c941ac5-0435-4702-91f5-b8afc0baf4ec Status - 200 Tempo - 12.546 ms\n","timestamp":"2025-03-02T22:20:44.495Z"}
+{"level":"info","message":"Método - GET Url - /api/players/4c941ac5-0435-4702-91f5-b8afc0baf4ec Status - 200 Tempo - 21.017 ms\n","timestamp":"2025-03-02T22:21:00.987Z"}
+{"level":"info","message":"Método - GET Url - /api/players/4c941ac5-0435-4702-91f5-b8afc0baf4ec Status - 200 Tempo - 13.447 ms\n","timestamp":"2025-03-02T22:22:16.322Z"}
+{"level":"info","message":"Método - GET Url - /api/players/4c941ac5-0435-4702-91f5-b8afc0baf4ec Status - 200 Tempo - 16.385 ms\n","timestamp":"2025-03-02T22:23:52.230Z"}
+{"level":"info","message":"Não foi enviado os campos necessários","timestamp":"2025-03-02T22:24:00.866Z"}
+{"level":"info","message":"Método - POST Url - /api/matches Status - 500 Tempo - 6.183 ms\n","timestamp":"2025-03-02T22:24:00.872Z"}
+{"level":"info","message":"Não foi enviado os campos necessários","timestamp":"2025-03-02T22:24:17.991Z"}
+{"level":"info","message":"Não foi enviado os campos necessários","timestamp":"2025-03-02T22:24:29.613Z"}
+{"level":"info","message":"Não foi enviado os campos necessários","timestamp":"2025-03-02T22:24:42.759Z"}
+{"level":"info","message":"Não foi enviado os campos necessários","timestamp":"2025-03-02T22:25:01.030Z"}
+{"level":"info","message":"Não foi enviado os campos necessários","timestamp":"2025-03-02T22:26:50.631Z"}
+{"level":"info","message":"Não foi enviado os campos necessários","timestamp":"2025-03-02T22:27:19.913Z"}
+{"level":"info","message":"Método - POST Url - /api/matches Status - 404 Tempo - 4.259 ms\n","timestamp":"2025-03-02T22:27:19.917Z"}
+{"level":"info","message":"Não foi enviado os campos necessários","timestamp":"2025-03-02T22:27:46.685Z"}
+{"level":"info","message":"Método - POST Url - /api/matches Status - 500 Tempo - 5.450 ms\n","timestamp":"2025-03-02T22:27:46.690Z"}
+{"level":"info","message":"Não foi enviado os campos necessários","timestamp":"2025-03-02T22:27:48.050Z"}
+{"level":"info","message":"Método - POST Url - /api/matches Status - 500 Tempo - 2.314 ms\n","timestamp":"2025-03-02T22:27:48.053Z"}
+{"level":"info","message":"Não foi enviado os campos necessários","timestamp":"2025-03-02T22:27:48.697Z"}
+{"level":"info","message":"Método - POST Url - /api/matches Status - 500 Tempo - 1.573 ms\n","timestamp":"2025-03-02T22:27:48.699Z"}
+{"level":"info","message":"Não foi enviado os campos necessários","timestamp":"2025-03-02T22:28:04.547Z"}
+{"level":"info","message":"Método - POST Url - /api/matches Status - 500 Tempo - 5.119 ms\n","timestamp":"2025-03-02T22:28:04.553Z"}
+{"level":"info","message":"Não foi enviado os campos necessários","timestamp":"2025-03-02T22:28:15.276Z"}
+{"level":"info","message":"Método - POST Url - /api/matches Status - 404 Tempo - 4.374 ms\n","timestamp":"2025-03-02T22:28:15.281Z"}
+{"level":"info","message":"Método - PUT Url - /api/matches/10 Status - 500 Tempo - 5.089 ms\n","timestamp":"2025-03-02T22:30:20.748Z"}
+{"level":"info","message":"Método - PUT Url - /api/matches/10 Status - 500 Tempo - 5.291 ms\n","timestamp":"2025-03-02T22:30:22.459Z"}
+{"level":"info","message":"Método - PUT Url - /api/matches/10 Status - 500 Tempo - 8.543 ms\n","timestamp":"2025-03-02T22:30:56.797Z"}
+{"level":"info","message":"Método - PUT Url - /api/matches/10 Status - 500 Tempo - 8.133 ms\n","timestamp":"2025-03-02T22:31:30.766Z"}
+{"level":"info","message":"Método - PUT Url - /api/matches/10 Status - 500 Tempo - 8.223 ms\n","timestamp":"2025-03-02T22:31:47.653Z"}
+{"level":"info","message":"Método - PUT Url - /api/matches/10 Status - 500 Tempo - 10.959 ms\n","timestamp":"2025-03-02T22:32:10.530Z"}
+{"level":"info","message":"Não foi enviado os campos necessários","timestamp":"2025-03-02T22:32:13.506Z"}
+{"level":"info","message":"Método - POST Url - /api/matches Status - 404 Tempo - 3.085 ms\n","timestamp":"2025-03-02T22:32:13.509Z"}
+{"level":"info","message":"Método - PUT Url - /api/matches/10 Status - 500 Tempo - 8.357 ms\n","timestamp":"2025-03-02T22:32:54.921Z"}
+{"level":"info","message":"Método - PUT Url - /api/matches/10 Status - 500 Tempo - 7.933 ms\n","timestamp":"2025-03-02T22:33:21.215Z"}
+{"level":"info","message":"Método - PUT Url - /api/matches/3 Status - 500 Tempo - 6.436 ms\n","timestamp":"2025-03-02T22:33:31.088Z"}
+{"level":"info","message":"Método - PUT Url - /api/matches/3 Status - 500 Tempo - 9.101 ms\n","timestamp":"2025-03-02T22:34:08.997Z"}
+{"level":"info","message":"Método - PUT Url - /api/matches/3 Status - 500 Tempo - 8.469 ms\n","timestamp":"2025-03-02T22:34:23.741Z"}
+{"level":"info","message":"Método - PUT Url - /api/matches/3 Status - 500 Tempo - 7.178 ms\n","timestamp":"2025-03-02T22:34:32.285Z"}
+{"level":"info","message":"Método - PUT Url - /api/matches/10 Status - 500 Tempo - 8.873 ms\n","timestamp":"2025-03-02T22:34:46.607Z"}
+{"level":"info","message":"Método - PUT Url - /api/matches/10 Status - 500 Tempo - 8.543 ms\n","timestamp":"2025-03-02T22:35:05.914Z"}
+{"level":"info","message":"Método - PUT Url - /api/matches/10 Status - 500 Tempo - 8.961 ms\n","timestamp":"2025-03-02T22:35:16.054Z"}
+{"level":"info","message":"Método - PUT Url - /api/matches/3 Status - 500 Tempo - 5.112 ms\n","timestamp":"2025-03-02T22:35:23.050Z"}
+{"level":"info","message":"Método - PUT Url - /api/matches/4 Status - 500 Tempo - 4.423 ms\n","timestamp":"2025-03-02T22:35:29.373Z"}
+{"level":"info","message":"Método - PUT Url - /api/matches/4 Status - 500 Tempo - 9.668 ms\n","timestamp":"2025-03-02T22:35:43.995Z"}
+{"level":"info","message":"Método - POST Url - /api/matches Status - 201 Tempo - 45.570 ms\n","timestamp":"2025-03-02T22:36:31.909Z"}
+{"level":"info","message":"Método - PUT Url - /api/matches/4 Status - 404 Tempo - 15.385 ms\n","timestamp":"2025-03-02T22:36:38.210Z"}
+{"level":"info","message":"Método - PUT Url - /api/matches/4 Status - 204 Tempo - 18.306 ms\n","timestamp":"2025-03-02T22:36:55.092Z"}
+{"level":"info","message":"Método - PUT Url - /api/matches/10 Status - 500 Tempo - 3.111 ms\n","timestamp":"2025-03-02T22:36:58.278Z"}
+{"level":"info","message":"Método - PUT Url - /api/matches/10 Status - 500 Tempo - 4.035 ms\n","timestamp":"2025-03-02T22:36:59.310Z"}
+{"level":"info","message":"Método - PUT Url - /api/matches/10 Status - 500 Tempo - 3.645 ms\n","timestamp":"2025-03-02T22:37:00.037Z"}
+{"level":"info","message":"Método - PUT Url - /api/matches/10 Status - 500 Tempo - 8.274 ms\n","timestamp":"2025-03-02T22:37:12.566Z"}
+{"level":"info","message":"Método - PUT Url - /api/matches/4 Status - 204 Tempo - 19.449 ms\n","timestamp":"2025-03-02T22:37:20.737Z"}
+{"level":"info","message":"Método - PUT Url - /api/matches/10 Status - 404 Tempo - 8.609 ms\n","timestamp":"2025-03-02T22:37:51.284Z"}
+{"level":"info","message":"Método - PUT Url - /api/matches/10 Status - 404 Tempo - 4.703 ms\n","timestamp":"2025-03-02T22:37:52.423Z"}
+{"level":"info","message":"Método - POST Url - /api/players Status - 404 Tempo - 2.969 ms\n","timestamp":"2025-03-02T22:40:38.023Z"}
+{"level":"info","message":"Método - GET Url - /api/players/4c941ac5-0435-4 Status - 500 Tempo - 32.975 ms\n","timestamp":"2025-03-02T22:40:45.684Z"}
+{"level":"info","message":"Método - GET Url - /api/players/4c941ac5-0435-4 Status - 500 Tempo - 4.697 ms\n","timestamp":"2025-03-02T22:40:46.780Z"}
+{"level":"info","message":"Método - GET Url - /api/players/4c941ac5-0435-4702-91f5-b8afc0baf4ed Status - 404 Tempo - 4.972 ms\n","timestamp":"2025-03-02T22:40:51.120Z"}
+{"level":"info","message":"Método - GET Url - /api/players/4c941ac5-0435-4702-91f5-b8afc0baf4ec Status - 200 Tempo - 5.953 ms\n","timestamp":"2025-03-02T22:40:53.804Z"}
+{"level":"info","message":"Método - DELETE Url - /api/players/c203b165-54ae-49ba-8816-54eb2092458c Status - 404 Tempo - 4.570 ms\n","timestamp":"2025-03-02T22:40:57.965Z"}
+{"level":"info","message":"Método - DELETE Url - /api/players/c203b165-54ae-49ba-8816-54eb2092458d Status - 404 Tempo - 2.810 ms\n","timestamp":"2025-03-02T22:41:00.883Z"}
+{"level":"info","message":"Método - DELETE Url - /api/players/c203b165-54ae-49ba-8816-54eb2092458d Status - 404 Tempo - 3.365 ms\n","timestamp":"2025-03-02T22:41:01.863Z"}
+{"level":"info","message":"Método - DELETE Url - /api/players/c203b165-54ae-49ba-8816- Status - 500 Tempo - 3.201 ms\n","timestamp":"2025-03-02T22:41:05.414Z"}
+{"level":"info","message":"Método - GET Url - /api/players/4c941ac5-0435-4702-91f5- Status - 500 Tempo - 5.974 ms\n","timestamp":"2025-03-02T22:45:45.089Z"}
+{"level":"info","message":"Método - GET Url - /api/players/4c941ac5-0435-4702-91f5- Status - 500 Tempo - 2.090 ms\n","timestamp":"2025-03-02T22:45:47.782Z"}
+{"level":"info","message":"Método - GET Url - /api/players/4c941ac5-0435-4702-91f5- Status - 500 Tempo - 5.210 ms\n","timestamp":"2025-03-02T22:45:58.966Z"}
+{"level":"info","message":"Método - GET Url - /api/players/4c941ac5-0435-4702-91f5- Status - 404 Tempo - 6.608 ms\n","timestamp":"2025-03-02T22:46:32.326Z"}
+{"level":"info","message":"Método - POST Url - /api/teams Status - 404 Tempo - 3.365 ms\n","timestamp":"2025-03-02T22:50:01.613Z"}
+{"level":"info","message":"Método - POST Url - /api/players/teams Status - 500 Tempo - 48.532 ms\n","timestamp":"2025-03-02T22:50:16.978Z"}
+{"level":"info","message":"Método - POST Url - /api/players/teams Status - 500 Tempo - 10.812 ms\n","timestamp":"2025-03-02T22:51:15.399Z"}
+{"level":"info","message":"Método - POST Url - /api/players/teams Status - 404 Tempo - 7.821 ms\n","timestamp":"2025-03-02T22:53:47.260Z"}
+{"level":"info","message":"Método - POST Url - /api/players/teams Status - 404 Tempo - 3.963 ms\n","timestamp":"2025-03-02T22:53:52.920Z"}
+{"level":"info","message":"Método - POST Url - /api/players/teams Status - 404 Tempo - 4.181 ms\n","timestamp":"2025-03-02T22:53:53.699Z"}
+{"level":"info","message":"Método - POST Url - /api/players/teams Status - 404 Tempo - 0.616 ms\n","timestamp":"2025-03-02T22:54:01.196Z"}
+{"level":"info","message":"Método - POST Url - /api/players/teams Status - 404 Tempo - 1.341 ms\n","timestamp":"2025-03-02T22:54:01.849Z"}
+{"level":"info","message":"Método - POST Url - /api/players/teams Status - 404 Tempo - 0.779 ms\n","timestamp":"2025-03-02T22:54:03.581Z"}

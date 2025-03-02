@@ -1,3 +1,4 @@
+import { ResourceNotFoundError } from "../../errors/resource-not-found-error.js";
 import { MatchRepository } from "../../repository/match/repository.js"
 
 export class UpdateMatchService {
@@ -8,10 +9,9 @@ export class UpdateMatchService {
 
         const matchRepository = new MatchRepository()
         const findMatchById = await matchRepository.findById(matchId)
-
-        if(!findMatchById) throw new Error("Partida não encontrada")
+      
+        if(!findMatchById) throw new ResourceNotFoundError("Partida não encontrada")
         
-
         if(kindOfMatch) {
             updateKindOfMatch = kindOfMatch
         } else {

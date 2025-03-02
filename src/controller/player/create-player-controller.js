@@ -2,7 +2,7 @@ import { CreatePlayerService } from "../../service/player/create-player-service.
 
 export class CreatePlayerController {
 
-    async post(req, res) {
+    async post(req, res, next) {
         try {
             const { name } = req.body
 
@@ -11,9 +11,7 @@ export class CreatePlayerController {
 
             res.json(player)
         } catch (error) {
-            res.json({
-                message: "Server Internal Error"
-            })
+            next(error)
         }
 
     }

@@ -2,7 +2,7 @@ import { FindPlayerByIdService } from "../../service/player/find-player-by-id-se
 
 export class FindPlayerByIdController {
 
-    async get(req, res) {
+    async get(req, res, next) {
         try {
             const { id } = req.params
 
@@ -11,10 +11,7 @@ export class FindPlayerByIdController {
 
             res.json(player)
         } catch (error) {
-            res.json({
-                message: "Server Internal Error",
-                status: 500
-            })
+            next(error)
         }
 
     }

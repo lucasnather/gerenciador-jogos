@@ -10,8 +10,8 @@ const findPlayerByIdController = new FindPlayerByIdController()
 const deletePlayerByIdController = new DeletePlayerByIdController()
 
 router
-    .post("/api/players", (req, res) => createPlayerController.post(req, res))
-    .get("/api/players/:id", (req, res) => findPlayerByIdController.get(req, res))
-    .delete("/api/players/:id", (req, res) => deletePlayerByIdController.remove(req, res))
+    .post("/api/players", (req, res, next) => createPlayerController.post(req, res, next))
+    .get("/api/players/:id", (req, res, next) => findPlayerByIdController.get(req, res, next))
+    .delete("/api/players/:id", (req, res, next) => deletePlayerByIdController.remove(req, res, next))
 
 export { router }

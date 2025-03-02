@@ -6,6 +6,6 @@ const router = Router()
 const createTeamController = new CreateTeamController()
 
 router
-    .post("/api/teams",(req, res) => createTeamController.post(req, res))
+    .post("/api/teams",(req, res, next) => createTeamController.post(req, res, next))
 
 export { router }

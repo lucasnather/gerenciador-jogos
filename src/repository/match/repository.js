@@ -34,6 +34,9 @@ export class MatchRepository {
 
     async findById(id) {
         const match = await Matches.findByPk(id)
+
+        if(!match) return null
+
         return match.toJSON()
     }
 }

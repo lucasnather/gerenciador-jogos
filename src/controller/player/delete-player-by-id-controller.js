@@ -2,7 +2,7 @@ import { DeletePlayerByIdService } from "../../service/player/delete-player-by-i
 
 export class DeletePlayerByIdController {
 
-    async remove(req, res) {
+    async remove(req, res, next) {
         try {
             const { id } = req.params
 
@@ -11,9 +11,7 @@ export class DeletePlayerByIdController {
 
             res.json(player)
         } catch (error) {
-            res.json({
-                message: "Server Internal Error"
-            })
+            next(error)
         }
 
     }

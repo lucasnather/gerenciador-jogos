@@ -1,8 +1,8 @@
-import { CreateTeamService } from "../../service/team-player/create-team-service.js"
+import { CreateTeamService } from "../../service/team/create-team-service.js"
 
 export class CreateTeamController {
 
-    async post(req, res) {
+    async post(req, res, next) {
         try {
             const { name } = req.body
 
@@ -11,9 +11,7 @@ export class CreateTeamController {
 
             res.json(team)
         } catch (error) {
-            res.json({
-                message: "Server Internal Error"
-            })
+            next(error)
         }
 
     }
