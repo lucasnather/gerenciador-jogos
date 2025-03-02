@@ -1,13 +1,14 @@
 import 'dotenv/config'
 import express from 'express'
-import { sequelize } from './model/connection.js'
-import { Matches } from './model/entities/matches.js'
-import { Player } from './model/entities/player.js'
-import { TeamPlayers } from './model/entities/team-players.js'
-import { Teams } from './model/entities/teams.js'
-import { Scores } from './model/entities/score.js'
+import { sequelize } from './model/connection/sequelize.js'
+import { router as playerRouter } from './routes/player/routes.js'
+
 const app = express()
 const port = process.env.PORT || 3000
+
+app.use(express.json())
+
+app.use(playerRouter)
 
 app.get('/', (req, res) => {
   res.json({

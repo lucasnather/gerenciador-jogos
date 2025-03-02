@@ -1,4 +1,4 @@
-import { sequelize } from "../connection.js";
+import { sequelize } from "../connection/sequelize.js";
 import { STRING, UUID } from "sequelize"
 
 export const Player = sequelize.define('Player', {

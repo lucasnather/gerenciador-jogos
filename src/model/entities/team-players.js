@@ -1,5 +1,5 @@
 import { INTEGER, UUID } from "sequelize";
-import { sequelize } from "../connection.js";
+import { sequelize } from "../connection/sequelize.js";
 import { Player } from "./player.js";
 import { Teams } from "./teams.js";
 

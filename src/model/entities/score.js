@@ -1,6 +1,5 @@
-import { INTEGER, STRING, UUID } from "sequelize";
-import { sequelize } from "../connection.js";
-import { Matches } from "./matches.js";
+import { INTEGER, UUID } from "sequelize";
+import { sequelize } from "../connection/sequelize.js";
 import { Player } from "./player.js";
 
 export const Scores = sequelize.define('Scores', {

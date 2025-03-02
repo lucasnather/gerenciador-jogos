@@ -1,5 +1,5 @@
 import { DATE, ENUM, INTEGER } from "sequelize";
-import { sequelize } from "../connection.js";
+import { sequelize } from "../connection/sequelize.js";
 
 export const Teams = sequelize.define('Teams', {
     id: {
