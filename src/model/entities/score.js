@@ -1,5 +1,6 @@
 import { INTEGER, UUID } from "sequelize";
 import { sequelize } from "../connection/sequelize.js";
+import { Matches } from "./matches.js";
 import { Player } from "./player.js";
 
 export const Scores = sequelize.define('Scores', {
@@ -20,5 +21,12 @@ export const Scores = sequelize.define('Scores', {
             key: 'id'
         },
         allowNull: false
+    },
+    matchId: {
+        type: INTEGER,
+        references: {
+            model: Matches,
+            key: 'id'
+        }
     }
 })

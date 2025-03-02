@@ -2,7 +2,6 @@ import { DATE, ENUM, INTEGER, STRING, UUID } from "sequelize";
 import { sequelize } from "../connection/sequelize.js";
 import { Player } from "./player.js";
 import { Teams } from "./teams.js";
-import { Scores } from "./score.js"
 
 export const Matches = sequelize.define('Matches', {
     id: {
@@ -39,14 +38,6 @@ export const Matches = sequelize.define('Matches', {
         type: UUID,
         references: {
             model: Player,
-            key: 'id'
-        },
-        allowNull: true
-    },
-    scoreId: {
-        type: INTEGER,
-        references: {
-            model: Scores,
             key: 'id'
         },
         allowNull: true
