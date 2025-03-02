@@ -2,6 +2,7 @@ import 'dotenv/config'
 import express from 'express'
 import { sequelize } from './model/connection/sequelize.js'
 import { router as playerRouter } from './routes/player/routes.js'
+import { router as teamRouter } from './routes/team/route.js'
 
 const app = express()
 const port = process.env.PORT || 3000
@@ -9,6 +10,7 @@ const port = process.env.PORT || 3000
 app.use(express.json())
 
 app.use(playerRouter)
+app.use(teamRouter)
 
 app.get('/', (req, res) => {
   res.json({
