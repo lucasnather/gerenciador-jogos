@@ -8,7 +8,6 @@ export class CreateMatchController {
 
             const createMatchService = new CreateMatchService()
             const match = await createMatchService.handle(kindOfMatch, gameName)
-            console.log(match)
 
             res.json(match)
         } catch (error) {
