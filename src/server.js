@@ -3,6 +3,7 @@ import express from 'express'
 import { sequelize } from './model/connection/sequelize.js'
 import { router as playerRouter } from './routes/player/routes.js'
 import { router as teamRouter } from './routes/team/route.js'
+import { router as teamPlayerRouter } from './routes/team-player/route.js'
 
 const app = express()
 const port = process.env.PORT || 3000
@@ -11,6 +12,7 @@ app.use(express.json())
 
 app.use(playerRouter)
 app.use(teamRouter)
+app.use(teamPlayerRouter)
 
 app.get('/', (req, res) => {
   res.json({

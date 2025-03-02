@@ -8,7 +8,6 @@ export class CreateTeamController {
 
             const createTeamService = new CreateTeamService()
             const team = await createTeamService.handle(name)
-            console.log(team)
 
             res.json(team)
         } catch (error) {
