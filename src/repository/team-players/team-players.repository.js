@@ -2,7 +2,7 @@ import { TeamPlayers } from "../../model/entities/team-players.js";
 
 export class TeamPlayerRepository {
 
-    async post(playerId, teamsId) {
+    async create(playerId, teamsId) {
         const teamPlayers = TeamPlayers.build({
             playerId,
             teamsId

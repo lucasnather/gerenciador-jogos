@@ -8,7 +8,7 @@ export class CreatePlayerService {
         }
 
         const playerRepository = new PlayerRepository()
-        const player = await playerRepository.post(name)
+        const player = await playerRepository.create(name)
 
         return {
             data: {

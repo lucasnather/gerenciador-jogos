@@ -8,7 +8,7 @@ export class CreateTeamPlayerService {
         }
 
         const teamPlayerRepository = new TeamPlayerRepository()
-        const teamsPlayer = await teamPlayerRepository.post(playerId, teamsId)
+        const teamsPlayer = await teamPlayerRepository.create(playerId, teamsId)
 
         return {
             data: {

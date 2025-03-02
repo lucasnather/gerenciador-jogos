@@ -3,7 +3,7 @@ import { randomUUID } from "node:crypto"
 
 export class PlayerRepository {
 
-    async post(name) {
+    async create(name) {
         const id = randomUUID()
         const player = Player.build({
             id,

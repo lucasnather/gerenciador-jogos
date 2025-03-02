@@ -2,7 +2,7 @@ import { Teams } from "../../model/entities/teams.js";
 
 export class TeamRepository {
 
-    async post(name) {
+    async create(name) {
         const team = Teams.build({
             name
         })

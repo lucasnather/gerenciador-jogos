@@ -9,7 +9,7 @@ export class CreateTeamService {
         }
 
         const teamRepository = new TeamRepository()
-        const team = await teamRepository.post(name)
+        const team = await teamRepository.create(name)
 
         return {
             data: {
