@@ -49,7 +49,7 @@ export const Matches = sequelize.define('Matches', {
             model: Scores,
             key: 'id'
         },
-        allowNull: false
+        allowNull: true
     },
     createdAt: {
         type: DATE,

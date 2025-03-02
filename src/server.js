@@ -4,6 +4,7 @@ import { sequelize } from './model/connection/sequelize.js'
 import { router as playerRouter } from './routes/player/routes.js'
 import { router as teamRouter } from './routes/team/route.js'
 import { router as teamPlayerRouter } from './routes/team-player/route.js'
+import { router as matchRouter } from './routes/match/route.js'
 
 const app = express()
 const port = process.env.PORT || 3000
@@ -13,6 +14,7 @@ app.use(express.json())
 app.use(playerRouter)
 app.use(teamRouter)
 app.use(teamPlayerRouter)
+app.use(matchRouter)
 
 app.get('/', (req, res) => {
   res.json({
