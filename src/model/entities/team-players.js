@@ -28,11 +28,15 @@ export const TeamPlayers = sequelize.define('TeamPlayers', {
 
 TeamPlayers.hasMany(Player, {
     foreignKey: {
-        name: 'id'
-    }
+        name: 'id',
+    },
+    onDelete: 'CASCADE',
+    hooks: true
 })
 TeamPlayers.hasMany(Teams, {
     foreignKey: {
         name: 'id'
-    }
+    },
+    onDelete: 'CASCADE',
+    hooks: true
 })

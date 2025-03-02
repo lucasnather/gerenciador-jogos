@@ -12,7 +12,8 @@ export class FindPlayerByIdController {
             res.json(player)
         } catch (error) {
             res.json({
-                message: "Server Internal Error"
+                message: "Server Internal Error",
+                status: 500
             })
         }
 

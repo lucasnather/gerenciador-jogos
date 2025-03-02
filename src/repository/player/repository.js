@@ -21,5 +21,15 @@ export class PlayerRepository {
 
         return player.toJSON()
     }
+
+    async remove(id) {
+        await Player.destroy({
+            where: {
+                id
+            },
+            cascade: true,
+            truncate: true
+        })
+    }
 }
 
