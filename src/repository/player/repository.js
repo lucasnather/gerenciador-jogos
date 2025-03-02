@@ -13,5 +13,13 @@ export class PlayerRepository {
         await player.save()
         return player.toJSON()
     }
+
+    async findById(id) {
+        const player = await Player.findByPk(id)
+
+        if(!player) return null
+
+        return player.toJSON()
+    }
 }
 
