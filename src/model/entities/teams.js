@@ -1,7 +1,7 @@
 import { DATE, ENUM, INTEGER } from "sequelize";
 import { sequelize } from "../connection/sequelize.js";
 
-export const Teams = sequelize.define('Teams', {
+export const Teams = sequelize.define('teams', {
     id: {
         type: INTEGER,
         primaryKey: true,

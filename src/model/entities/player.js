@@ -1,7 +1,7 @@
 import { sequelize } from "../connection/sequelize.js";
 import { STRING, UUID } from "sequelize"
 
-export const Player = sequelize.define('Player', {
+export const Player = sequelize.define('players', {
     id: {
         type: UUID,
         primaryKey: true,

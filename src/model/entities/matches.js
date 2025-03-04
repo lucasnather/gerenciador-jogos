@@ -3,7 +3,7 @@ import { sequelize } from "../connection/sequelize.js";
 import { Player } from "./player.js";
 import { Teams } from "./teams.js";
 
-export const Matches = sequelize.define('Matches', {
+export const Matches = sequelize.define('matches', {
     id: {
         type: INTEGER,
         primaryKey: true,
@@ -48,4 +48,32 @@ export const Matches = sequelize.define('Matches', {
         allowNull: false
     },
 })
+
+Matches.hasOne(Player, {
+    foreignKey: {
+        name: 'id'
+    },
+})
+
+
+Matches.hasMany(Teams, {
+    foreignKey: {
+        name: 'id',
+    },
+})
+
+Matches.belongsTo(Player, {
+    foreignKey: 'playerWinnerId',
+    as: 'playerWinner'
+});
+
+Matches.belongsTo(Teams, {
+    foreignKey: 'teamWinnerId',
+    as: 'teamWinner'
+});
+
+Matches.belongsTo(Teams, {
+    foreignKey: 'teamLooserId',
+    as: 'teamLooser'
+});
 

@@ -3,7 +3,7 @@ import { sequelize } from "../connection/sequelize.js";
 import { Player } from "./player.js";
 import { Teams } from "./teams.js";
 
-export const TeamPlayers = sequelize.define('TeamPlayers', {
+export const TeamPlayers = sequelize.define('team_players', {
     id: {
         type: INTEGER,
         primaryKey: true,
@@ -33,6 +33,7 @@ TeamPlayers.hasMany(Player, {
     onDelete: 'CASCADE',
     hooks: true
 })
+
 TeamPlayers.hasMany(Teams, {
     foreignKey: {
         name: 'id'

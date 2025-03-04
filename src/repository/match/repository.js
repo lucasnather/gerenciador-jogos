@@ -1,4 +1,6 @@
 import { Matches } from "../../model/entities/matches.js";
+import { Teams } from "../../model/entities/teams.js";
+import { Player } from "../../model/entities/player.js";
 
 export class MatchRepository {
 
@@ -28,12 +30,53 @@ export class MatchRepository {
             }
         })
 
-        console.log(match)
         return match
+    }
+    async findMany() {
+        const matches = await Matches.findAll({
+            include: [
+                {
+                    model: Player,
+                    as: 'playerWinner',
+                    foreignKey: 'playerWinnerId'
+                },
+                {
+                    model: Teams,
+                    as: 'teamWinner',
+                    foreignKey: 'teamWinnerId'
+                },
+                {
+                    model: Teams,
+                    as: 'teamLooser',
+                    foreignKey: 'teamLooserId'
+                }
+            ]
+        });
+
+        return matches
     }
 
     async findById(id) {
-        const match = await Matches.findByPk(id)
+        const match = await Matches.findOne({
+            where: { id },
+            include: [
+                {
+                    model: Player,
+                    as: 'playerWinner',
+                    foreignKey: 'playerWinnerId'
+                },
+                {
+                    model: Teams,
+                    as: 'teamWinner',
+                    foreignKey: 'teamWinnerId'
+                },
+                {
+                    model: Teams,
+                    as: 'teamLooser',
+                    foreignKey: 'teamLooserId'
+                }
+            ]
+        });
 
         if(!match) return null
 

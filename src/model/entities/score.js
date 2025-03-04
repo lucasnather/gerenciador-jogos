@@ -3,7 +3,7 @@ import { sequelize } from "../connection/sequelize.js";
 import { Matches } from "./matches.js";
 import { Player } from "./player.js";
 
-export const Scores = sequelize.define('Scores', {
+export const Scores = sequelize.define('scores', {
     id: {
         type: INTEGER,
         primaryKey: true,
