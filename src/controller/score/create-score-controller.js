@@ -4,10 +4,10 @@ export class CreateScoreController {
 
     async post(req, res, next) {
         try {
-            const { score, playerId } = req.body
+            const { score, playerId, matchId } = req.body
 
             const createScoreService = new CreateScoreService()
-            const scores = await createScoreService.handle(score, playerId)
+            const scores = await createScoreService.handle(score, playerId, matchId)
 
             res.json(scores)
         } catch (error) {

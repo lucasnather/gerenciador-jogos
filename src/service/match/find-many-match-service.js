@@ -2,12 +2,15 @@ import { MatchRepository } from "../../repository/match/repository.js";
 import { TeamPlayerRepository } from "../../repository/team-players/repository.js";
 import { PlayerRepository } from "../../repository/player/repository.js";
 import { ResourceNotFoundError } from "../../errors/resource-not-found-error.js";
+import { ScoreRepository } from "../../repository/score/repository.js";
 
 export class FindManyMatchService {
     async handle(teamWinner, teamLoser, playerWinner, gameName, kindOfMatch) {
         const matchRepository = new MatchRepository();
         const teamPlayerRepository = new TeamPlayerRepository();
         const playerRepository = new PlayerRepository();
+        const scoreRepository = new ScoreRepository();
+
         const matches = await matchRepository.findMany(teamWinner, teamLoser, playerWinner, gameName, kindOfMatch);
 
         if (!matches || matches.length === 0) {
@@ -33,26 +36,30 @@ export class FindManyMatchService {
             })
         );
 
-
-        const matchesWithPlayerNames = await Promise.all(
+        const matchesWithPlayerNamesAndScores = await Promise.all(
             matchesWithPlayers.map(async (match) => {
-
-                const winnerPlayersWithNames = await Promise.all(
+                const winnerPlayersWithNamesAndScores = await Promise.all(
                     match.teamWinner.players.map(async (player) => {
                         const playerDetails = await playerRepository.findById(player.id);
+                        const playerScore = await scoreRepository.findScoreByPlayerId(player.id, match.id);
+
                         return {
                             id: player.id,
                             name: playerDetails.name,
+                            score: playerScore ? playerScore.score : null
                         };
                     })
                 );
 
-                const looserPlayersWithNames = await Promise.all(
+                const looserPlayersWithNamesAndScores = await Promise.all(
                     match.teamLooser.players.map(async (player) => {
                         const playerDetails = await playerRepository.findById(player.playerId);
+                        const playerScore = await scoreRepository.findScoreByPlayerId(player.playerId, match.id);
+
                         return {
                             id: player.id,
                             name: playerDetails.name,
+                            score: playerScore ? playerScore.score : null
                         };
                     })
                 );
@@ -61,11 +68,11 @@ export class FindManyMatchService {
                     ...match,
                     teamWinner: {
                         ...match.teamWinner,
-                        players: winnerPlayersWithNames,
+                        players: winnerPlayersWithNamesAndScores,
                     },
                     teamLooser: {
                         ...match.teamLooser,
-                        players: looserPlayersWithNames,
+                        players: looserPlayersWithNamesAndScores,
                     },
                 };
             })
@@ -74,7 +81,7 @@ export class FindManyMatchService {
         return {
             data: {
                 status: 200,
-                matches: matchesWithPlayerNames,
+                matches: matchesWithPlayerNamesAndScores,
             },
         };
     }

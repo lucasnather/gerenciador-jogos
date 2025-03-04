@@ -3,11 +3,11 @@ import { ResourceRequiredError } from "../../errors/resource-required-error.js"
 
 export class CreateScoreService {
 
-    async handle(score, playerId) {
+    async handle(score, playerId, matchId) {
         if(!score || !playerId) throw new ResourceRequiredError('Os campos pontuação e jogador são campos requeridos')
 
         const scoreRepository = new ScoreRepository()
-        const scores = await scoreRepository.create(score, playerId)
+        const scores = await scoreRepository.create(score, playerId, matchId)
 
         return {
             data: {

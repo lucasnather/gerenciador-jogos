@@ -13,15 +13,31 @@ export class TeamPlayerRepository {
     }
 
     async findManyById(teamsId) {
-        const team = await TeamPlayers.findAll({
+        const teamPlayers = await TeamPlayers.findAll({
             where: {
                 teamsId
             }
         })
         
-        if(!team) return null
+        if(!teamPlayers) return null
 
-        return team
+        return teamPlayers
+    }
+
+    async remove(id) {
+        await TeamPlayers.destroy({
+            where: {
+                id
+            }
+        })
+    }
+
+    async update(id, playerId, teamsId) {
+        const teamPlayers = await TeamPlayers.update({ playerId, teamsId }, {
+            where: {
+                id
+            }
+        })
     }
 }
 
