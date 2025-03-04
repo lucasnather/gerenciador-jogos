@@ -18,7 +18,7 @@ export class TeamPlayerRepository {
                 teamsId
             }
         })
-
+        
         if(!team) return null
 
         return team
