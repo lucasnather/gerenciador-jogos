@@ -4,10 +4,8 @@ import { ScoreRepository } from "../../repository/score/repository.js";
 export class UpdateScoreService {
 
     async handle(scoreId, score) {
-        console.log(scoreId)
         const scoreRepository = new ScoreRepository()
         const findScoreById = await scoreRepository.findById(scoreId)
-        console.log(findScoreById)
       
         if(!findScoreById) throw new ResourceNotFoundError("Partida não encontrada")
  

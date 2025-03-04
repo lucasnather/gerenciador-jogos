@@ -24,6 +24,18 @@ export class TeamPlayerRepository {
         return teamPlayers
     }
 
+    async findById(id) {
+        const teamPlayers = await TeamPlayers.findOne({
+            where: {
+                id
+            }
+        })
+        
+        if(!teamPlayers) return null
+
+        return teamPlayers
+    }
+
     async remove(id) {
         await TeamPlayers.destroy({
             where: {
@@ -38,6 +50,8 @@ export class TeamPlayerRepository {
                 id
             }
         })
+
+        return teamPlayers
     }
 }
 

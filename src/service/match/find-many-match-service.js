@@ -40,8 +40,8 @@ export class FindManyMatchService {
             matchesWithPlayers.map(async (match) => {
                 const winnerPlayersWithNamesAndScores = await Promise.all(
                     match.teamWinner.players.map(async (player) => {
-                        const playerDetails = await playerRepository.findById(player.id);
-                        const playerScore = await scoreRepository.findScoreByPlayerId(player.id, match.id);
+                        const playerDetails = await playerRepository.findById(player.playerId);
+                        const playerScore = await scoreRepository.findScoreByPlayerId(player.playerId, match.id);
 
                         return {
                             id: player.id,
