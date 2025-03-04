@@ -4,9 +4,22 @@ export class FindaManyMatchController {
 
     async get(req, res, next) {
         try {
-            const findManyMatchService = new FindManyMatchService()
-            const matches = await findManyMatchService.handle()
+            const { 
+                teamWinner, 
+                teamLoser,
+                playerWinner, 
+                gameName, 
+                kindOfMatch
+             } = req.query
 
+            const findManyMatchService = new FindManyMatchService()
+            const matches = await findManyMatchService.handle(
+                teamWinner, 
+                teamLoser,
+                playerWinner, 
+                gameName, 
+                kindOfMatch
+            )
             res.json(matches).status(200)
         } catch (error) {
             next(error)

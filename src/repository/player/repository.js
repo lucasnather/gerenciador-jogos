@@ -15,7 +15,11 @@ export class PlayerRepository {
     }
 
     async findById(id) {
-        const player = await Player.findByPk(id)
+        const player = await Player.findOne({
+            where: {
+                id
+            }
+        })
 
         if(!player) return null
 

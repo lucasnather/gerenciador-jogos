@@ -1,6 +1,7 @@
 import { Matches } from "../../model/entities/matches.js";
 import { Teams } from "../../model/entities/teams.js";
 import { Player } from "../../model/entities/player.js";
+import { Op } from "sequelize";
 
 export class MatchRepository {
 
@@ -32,26 +33,66 @@ export class MatchRepository {
 
         return match
     }
-    async findMany() {
+
+    async findMany(teamWinner, teamLoser,playerWinner, gameName, kindOfMatch) {
+
         const matches = await Matches.findAll({
+            [Op.or]: {
+                ...(gameName && {
+                    where: {
+                        gameName: {
+                            [Op.like]: `%${gameName}%`
+                        },
+                    }
+                }),
+                ...(kindOfMatch && {
+                    where: {
+                        kindOfMatch
+                    }
+                }),
+            },
             include: [
                 {
                     model: Player,
                     as: 'playerWinner',
-                    foreignKey: 'playerWinnerId'
+                    foreignKey: 'playerWinnerId',
+                    ...(playerWinner && {
+                        where: {
+                            name: {
+                                [Op.like]: `%${playerWinner}%`
+                            }
+                        }
+                    })
                 },
                 {
                     model: Teams,
                     as: 'teamWinner',
-                    foreignKey: 'teamWinnerId'
+                    foreignKey: 'teamWinnerId',
+                    ...(teamWinner && {
+                        where: {
+                            name: {
+                                [Op.like]: `%${teamWinner}%`
+                            }
+                        }
+                    })
                 },
                 {
                     model: Teams,
                     as: 'teamLooser',
-                    foreignKey: 'teamLooserId'
+                    foreignKey: 'teamLooserId',
+                    ...(teamLoser && {
+                        where: {
+                            name: {
+                                [Op.like]: `%${teamLoser}%`
+                            }
+                        }
+                    })
                 }
             ]
-        });
+        })
+
+        if(!matches) return null
+        
 
         return matches
     }

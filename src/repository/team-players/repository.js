@@ -11,5 +11,17 @@ export class TeamPlayerRepository {
         await teamPlayers.save()
         return teamPlayers.toJSON()
     }
+
+    async findManyById(teamsId) {
+        const team = await TeamPlayers.findAll({
+            where: {
+                teamsId
+            }
+        })
+
+        if(!team) return null
+
+        return team
+    }
 }
 
