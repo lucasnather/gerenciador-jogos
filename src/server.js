@@ -1,6 +1,7 @@
 import 'dotenv/config'
 import express from 'express'
 import morgan from 'morgan'
+import cors from "cors"
 import { sequelize } from './model/connection/sequelize.js'
 import { morganStream } from './libs/morgan.js'
 import { router as playerRouter } from './routes/player/routes.js'
@@ -14,9 +15,11 @@ const app = express()
 const port = process.env.PORT || 3000
 
 app.use(express.json())
+app.use(cors())
 app.use(morgan('Método - :method Url - :url Status - :status Tempo - :response-time ms', {
   stream: morganStream
 }))
+
 
 app.use(playerRouter)
 app.use(teamRouter)
